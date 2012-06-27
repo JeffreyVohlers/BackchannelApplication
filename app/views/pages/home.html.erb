@@ -1,0 +1,78 @@
+<h1>Backchannel Application</h1>
+<h2> Welcome </h2>
+
+<%= render "shared/search_bar"  %>
+
+<hr/>
+
+<table>
+  <tr>
+    <td>
+      <table>
+        <tr>
+          <td>
+<h3>Sign up</h3>
+          </td>
+        </tr>
+<form accept-charset="UTF-8" action="/users" class="new_user" id="new_user" method="post">
+  <tr>
+    <td>
+  <label for="user_name">Name</label>
+  <input id="user_name" name="user[username]" size="30" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+  <label for="user_password">Password</label>
+  <input id="user_password" name="user[password]" size="30" type="password" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+  <input class="btn btn-large btn-primary" name="commit" type="submit" value="Create my account" />
+          </td>
+        </tr>
+</form>
+      </table>
+    </td>
+
+
+    <td>
+      <table>
+        <tr>
+          <td>
+<h3>Sign in</h3>
+            </td>
+          </tr>
+
+<form accept-charset="UTF-8" action="/sessions" method="post">
+  <tr>
+    <td>
+    <label for="session_user_name">Username</label>
+    <input id="session_user_name" name="session[username]" size="30" type="text" />
+      </td>
+    </tr>
+    <tr>
+        <td>
+
+    <label for="session_password">Password</label>
+    <input id="session_password" name="session[password]" size="30"
+           type="password" />
+          </td>
+      </tr>
+  <tr>
+    <td>
+  <input class="btn btn-large btn-primary" name="commit" type="submit"
+         value="Sign in" />
+  </td>
+  </tr>
+</form>
+        </table>
+    </td>
+  </tr>
+</table>
+<%= link_to "Home", home_path %>
+<% if signed_in? %>
+    <%= link_to "User Page: "+ current_user.username, current_user %>
+    <%= link_to "Sign out", signout_path, method: "delete" %>
+<% end %>

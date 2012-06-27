@@ -1,0 +1,19 @@
+<%= render 'shared/search_bar' %>
+<br/>
+
+<ul>
+<% @desc.each do |post| %>
+      <li>
+        <%= link_to post.content, inspect_post_path(:post_param => post) %> has been responded to <%= post.rank %> times
+      </li>
+<% end %>
+</ul>
+
+<br/>
+<%= link_to "Home", home_path %>
+
+
+<% if signed_in? %>
+    <%= link_to "User Page: "+ current_user.username, current_user %>
+    <%= link_to "Sign out", signout_path, method: "delete" %>
+<% end %>

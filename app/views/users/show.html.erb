@@ -1,0 +1,60 @@
+<h2>Welcome <%= current_user.username %></h2>
+
+<%= render 'shared/search_bar' %>
+<%= render 'shared/post' %>
+
+<% if current_user.posts.any? %>
+    <h3>You have <%= current_user.posts.count %> Posts</h3>
+    <ul class="posts">
+        <% current_user.posts.each do |post| %>
+            <li>
+                <%= link_to post.content, inspect_post_path(:post_param => post) %>
+                <%=  link_to "delete", post, method: :delete, data: { confirm: "You sure?" }%>
+            </li>
+        <% end %>
+    </ul>
+<% end %>
+
+<br />
+
+<% if current_user.is_admin? %>
+<h3>Register a new Administrator</h3>
+<table>
+
+    <form accept-charset="UTF-8" action="/new_admin" class="new_user" id="new_user" method="post">
+      <tr>
+        <td>
+      <label for="user_name">Name</label>
+      <input id="user_name" name="user[username]" size="30" type="text" />
+  </td>
+</tr>
+<tr>
+  <td>
+    <label for="user_password">Password</label>
+    <input id="user_password" name="user[password]" size="30" type="password" />
+  </td>
+</tr>
+<tr>
+  <td>
+    <input class="btn btn-large btn-primary" name="commit" type="submit" value="Create admin account" />
+  </td>
+</tr>
+</form>
+</table>
+<% end %>
+
+<% if current_user.is_admin? %>
+    <br />
+    <br />
+    <b>Admin Reports</b>
+    <br/>
+    <%= link_to "Post Report", post_report_path%>
+    <br/>
+    <br/>
+<% end %>
+
+
+<%= link_to "Home", home_path %>
+<%= link_to "Sign out", signout_path, data: { confirm: "Are you sure you want to sign out?" }, method: "delete" %>
+
+

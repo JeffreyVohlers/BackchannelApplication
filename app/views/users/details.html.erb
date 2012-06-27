@@ -1,0 +1,26 @@
+<%= render 'shared/search_bar' %>
+
+<% @user=User.find(params[:user_param]) %>
+<h2> User <%= @user.username %></h2>
+
+<h3>Posts by this user</h3>
+
+<% @user.posts.each do |post| %>
+  <li>
+    <%= link_to post.content, inspect_post_path(:post_param => post) %>
+    <% if signed_in? && current_user.is_admin? %>
+        <%= link_to "delete", post, method: :delete, data: { confirm: "You sure?" } %>
+    <% end %>
+  </li>
+<% end %>
+
+<br/>
+<br/>
+
+<%= link_to "Home", home_path %>
+
+
+<% if signed_in? %>
+    <%= link_to "User Page: "+ current_user.username, current_user %>
+    <%= link_to "Sign out", signout_path, method: "delete" %>
+<% end %>

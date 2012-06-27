@@ -1,0 +1,60 @@
+<%= render 'shared/search_bar' %>
+
+<% @post=Post.find(params[:post_param]) %>
+
+<br/>
+
+<% if !@post.parent_post_number.nil?  %>
+    <b>Parent Post</b>
+    <% @parent_post = Post.find(@post.parent_post_number) %>
+    <%= link_to @parent_post.content, inspect_post_path(:post_param => @parent_post) %>
+    <br />
+    <br />
+<% end %>
+
+<b>Message:</b>
+<%= @post.content %>
+<% if signed_in? && current_user.is_admin? %>
+    <%= link_to "delete", @post, method: :delete, data: { confirm: "You sure?" } %>
+<% end %>
+
+<br/>
+
+<% @sub_posts = Post.all %>
+
+<ul>
+  <% @sub_posts.each do |child_post| %>
+    <% if child_post.parent_post_number == @post.id %>
+        <li>
+          <%= link_to child_post.content, inspect_post_path(:post_param => child_post) %>
+          <% if signed_in? && (current_user.is_admin? || current_user.id == child_post.user_id) %>
+              <%= link_to "delete", child_post, method: :delete, data: { confirm: "You sure?" } %>
+          <% end %>
+        </li>
+     <% end %>
+  <% end %>
+</ul>
+
+Posted by <%= link_to @post.user.username, inspect_user_path(:user_param => @post.user) %>
+
+<br/>
+
+<% if signed_in? && @post.parent_post_number.nil? && current_user.id != @post.user_id %>
+<form accept-charset="UTF-8" action="/posts" class="new_post" id="new_post" method="post">
+  <label for="content">Have a response to this post?</label>
+  <input id="parent" name="post[parent_post_number]" type="hidden" value=<%= @post.id %> />
+  <input id="content" name="post[content]" size="150" type="text" />
+  <input class="btn btn-large btn-primary" name="commit" type="submit" value="Respond to Post" />
+</form>
+<% end %>
+
+<br/>
+<br/>
+
+<%= link_to "Home", home_path %>
+
+
+<% if signed_in? %>
+    <%= link_to "User Page: "+ current_user.username, current_user %>
+    <%= link_to "Sign out", signout_path, method: "delete" %>
+<% end %>
