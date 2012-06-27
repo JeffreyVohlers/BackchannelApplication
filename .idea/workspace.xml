@@ -74,7 +74,7 @@
       <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="23" selection-start="593" selection-end="593" vertical-scroll-proportion="0.39702517">
+            <state line="30" column="35" selection-start="569" selection-end="569" vertical-scroll-proportion="0.37757438">
               <folding />
             </state>
           </provider>
@@ -84,7 +84,11 @@
         <entry file="file://$PROJECT_DIR$/app/views/posts/details.html.erb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="39" column="5" selection-start="1112" selection-end="1112" vertical-scroll-proportion="-15.615385">
-              <folding />
+              <folding>
+                <marker date="1340677773610" expanded="true" signature="549:1012" placeholder="..." />
+                <marker date="1340677773610" expanded="true" signature="657:979" placeholder="..." />
+                <marker date="1340677773610" expanded="true" signature="1292:1620" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -960,13 +964,17 @@
     <entry file="file://$PROJECT_DIR$/app/views/posts/details.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="39" column="5" selection-start="1112" selection-end="1112" vertical-scroll-proportion="-15.615385">
-          <folding />
+          <folding>
+            <marker date="1340677773610" expanded="true" signature="549:1012" placeholder="..." />
+            <marker date="1340677773610" expanded="true" signature="657:979" placeholder="..." />
+            <marker date="1340677773610" expanded="true" signature="1292:1620" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="23" selection-start="593" selection-end="593" vertical-scroll-proportion="0.39702517">
+        <state line="30" column="35" selection-start="569" selection-end="569" vertical-scroll-proportion="0.37757438">
           <folding />
         </state>
       </provider>

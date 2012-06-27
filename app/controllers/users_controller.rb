@@ -29,7 +29,6 @@ class UsersController < ApplicationController
 
   def create
     @user = User.new(params[:user])
-    @user.is_admin=true
     if @user.save
       sign_in @user
       redirect_to @user
