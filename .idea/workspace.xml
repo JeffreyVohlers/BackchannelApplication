@@ -71,24 +71,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="users_controller.rb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="users_controller.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="23" selection-start="409" selection-end="428" vertical-scroll-proportion="0.0">
+            <state line="31" column="23" selection-start="593" selection-end="593" vertical-scroll-proportion="0.39702517">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="details.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/posts/details.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="5" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.4787736">
-              <folding>
-                <marker date="1340677773610" expanded="true" signature="549:1012" placeholder="..." />
-                <marker date="1340677773610" expanded="true" signature="657:979" placeholder="..." />
-                <marker date="1340677773610" expanded="true" signature="1292:1620" placeholder="..." />
-              </folding>
+            <state line="39" column="5" selection-start="1112" selection-end="1112" vertical-scroll-proportion="-15.615385">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -126,10 +122,10 @@
         <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/shared/_search_bar.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
         <option value="$PROJECT_DIR$/app/views/sessions/search.html.erb" />
         <option value="$PROJECT_DIR$/app/views/posts/details.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
       </list>
     </option>
   </component>
@@ -738,14 +734,14 @@
     </configuration>
     <list size="9">
       <item index="0" class="java.lang.String" itemvalue="Rake.db:migrate" />
-      <item index="1" class="java.lang.String" itemvalue="Rake.routes" />
-      <item index="2" class="java.lang.String" itemvalue="Query Language Console.Default" />
-      <item index="3" class="java.lang.String" itemvalue="Rake.db:reset" />
-      <item index="4" class="java.lang.String" itemvalue="RSpec.post_spec" />
-      <item index="5" class="java.lang.String" itemvalue="Rake.test" />
-      <item index="6" class="java.lang.String" itemvalue="Rake.spec" />
-      <item index="7" class="java.lang.String" itemvalue="Rails.Production: Backchannel Application" />
-      <item index="8" class="java.lang.String" itemvalue="Rails.Development: Backchannel Application" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.test" />
+      <item index="2" class="java.lang.String" itemvalue="Rake.spec" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Production: Backchannel Application" />
+      <item index="4" class="java.lang.String" itemvalue="Rails.Development: Backchannel Application" />
+      <item index="5" class="java.lang.String" itemvalue="Rake.routes" />
+      <item index="6" class="java.lang.String" itemvalue="Query Language Console.Default" />
+      <item index="7" class="java.lang.String" itemvalue="Rake.db:reset" />
+      <item index="8" class="java.lang.String" itemvalue="RSpec.post_spec" />
     </list>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
@@ -826,13 +822,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3106884" sideWeight="0.7059639" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32871014" sideWeight="0.4673913" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32760897" sideWeight="0.49353448" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2633547" sideWeight="0.6736959" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2633547" sideWeight="0.6736959" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3263041" sideWeight="0.53846157" order="11" side_tool="true" content_ui="tabs" />
@@ -961,19 +957,17 @@
         <state line="2" column="12" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="23" selection-start="409" selection-end="428" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/posts/details.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="5" selection-start="1112" selection-end="1112" vertical-scroll-proportion="0.4787736">
-          <folding>
-            <marker date="1340677773610" expanded="true" signature="549:1012" placeholder="..." />
-            <marker date="1340677773610" expanded="true" signature="657:979" placeholder="..." />
-            <marker date="1340677773610" expanded="true" signature="1292:1620" placeholder="..." />
-          </folding>
+        <state line="39" column="5" selection-start="1112" selection-end="1112" vertical-scroll-proportion="-15.615385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="23" selection-start="593" selection-end="593" vertical-scroll-proportion="0.39702517">
+          <folding />
         </state>
       </provider>
     </entry>
